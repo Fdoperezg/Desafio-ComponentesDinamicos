@@ -2,6 +2,74 @@
 
 <h2>Alert Dismissing</h2>
 
+<div class="dismiss">
+    <strong>Hey! something went wrong</strong> You should check the fields below.
+    <button class="close" type="button">
+        <span>X</span>
+    </button>
+</div>
+
 <h2>Collapse</h2>
 
+<div>
+    <button class="btn btn-primary" id="btn-toggle" type="button" data-toggle="collapse" data-target="#Egofcollapse" aria-expanded="false" aria-controls="Egofcollapse">
+     Button with data-target
+    </button>
+    <div class="collapse" id="Egofcollapse">
+        <div class="card card-body">
+            This text should collapse to show you that you can replicate Bootstrap with Javascript.
+        </div>
+    </div>
+</div>
+
 <h2>Collapse Accordion</h2>
+
+<div class="accordion" id="Egofaccordion">
+    <div class="card">
+        <div class="card-header" id="FirstHeader">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="FirstCollapse" aria-expanded="true" aria-controls="FirstCollapse">
+                First Group Item
+                </button>
+            </h2>
+        </div>
+
+        <div id="FirstCollapse" class="collapse show" aria-labelledby="FirstCollapse" data-parent="#Egofaccordion">
+            <div class="card-body">
+            This is the first bunch of text that should collapse.
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="SecondHeader">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="SecondCollapse" aria-expanded="false" aria-controls="SecondCollapse">
+                Second Group Item
+                </button>
+            </h2>
+        </div>
+
+        <div id="SecondCollapse" class="collapse" aria-labelledby="SecondCollapse" data-parent="#Egofaccordion">
+            <div class="card-body">
+            This is the second bit of text that should collapse.
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="ThirdHeader">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="ThirdCollapse" aria-expanded="false" aria-controls="ThirdCollapse">
+                Third Group Item
+                </button>
+            </h2>
+        </div>
+
+        <div id="ThirdCollapse" class="collapse" aria-labelledby="ThirdCollapse" data-parent="#Egofaccordion">
+            <div class="card-body">
+            This is the third group of text that should collapse.
+            </div>
+        </div>
+    </div>
+</div>
