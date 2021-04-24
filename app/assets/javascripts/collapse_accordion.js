@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $('Egofaccordion').on('click', 'button', function (){
+    $('#Egofaccordion').on('click', 'button', function(){
         var part = $(this).attr('data-part');
-        $(part).slideToggle(200)
+        $(part).slideToggle(200);
     })
-})
+});

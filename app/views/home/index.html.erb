@@ -3,7 +3,7 @@
 <h2>Alert Dismissing</h2>
 
 <div class="dismiss">
-    <strong>Hey! something went wrong</strong> You should check the fields below.
+    <strong>Hey! something went wrong.</strong> Close this message:
     <button class="close" type="button">
         <span>X</span>
     </button>
@@ -13,11 +13,14 @@
 
 <div>
     <button class="btn btn-primary" id="btn-collapse" type="button" data-toggle="collapse" data-part="#Egofcollapse" aria-expanded="false" aria-controls="Egofcollapse">
-     Button with data-target
+     Collapse
     </button>
+</div>
+<br>
+<div>
     <div class="collapse" id="Egofcollapse">
         <div class="card card-body">
-            This text should collapse to show you that you can replicate Bootstrap with Javascript.
+            This text should collapse to show you that you can replicate Bootstrap with Javascript. <strong>Press the upper button</strong>
         </div>
     </div>
 </div>
@@ -28,15 +31,15 @@
     <div class="card">
         <div class="card-header" id="FirstHeader">
             <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-part="FirstCollapse" aria-expanded="true" aria-controls="FirstCollapse">
-                First Group Item
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-part="#FirstCollapse" aria-expanded="true" aria-controls="FirstCollapse">
+                Collapse below text 
                 </button>
             </h2>
         </div>
 
-        <div id="FirstCollapse" class="collapse show" aria-labelledby="FirstCollapse" data-parent="#Egofaccordion">
+        <div id="FirstCollapse" class="collapse show" aria-labelledby="FirstHeader" data-parent="#Egofaccordion">
             <div class="card-body">
-            This is the first bunch of text that should collapse.
+            This is the second bit of text that should collapse. <strong>Press the upper button</strong> 
             </div>
         </div>
     </div>
@@ -44,15 +47,15 @@
     <div class="card">
         <div class="card-header" id="SecondHeader">
             <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-part="SecondCollapse" aria-expanded="false" aria-controls="SecondCollapse">
-                Second Group Item
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-part="#SecondCollapse" aria-expanded="false" aria-controls="SecondCollapse">
+                Collapse below text 
                 </button>
             </h2>
         </div>
 
-        <div id="SecondCollapse" class="collapse" aria-labelledby="SecondCollapse" data-parent="#Egofaccordion">
+        <div id="SecondCollapse" class="collapse" aria-labelledby="SecondHeader" data-parent="#Egofaccordion">
             <div class="card-body">
-            This is the second bit of text that should collapse.
+            This is the second bit of text that should collapse. <strong>Press the upper button</strong> 
             </div>
         </div>
     </div>
@@ -60,15 +63,15 @@
     <div class="card">
         <div class="card-header" id="ThirdHeader">
             <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-part="ThirdCollapse" aria-expanded="false" aria-controls="ThirdCollapse">
-                Third Group Item
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-part="#ThirdCollapse" aria-expanded="false" aria-controls="ThirdCollapse">
+                Collapse below text 
                 </button>
             </h2>
         </div>
 
-        <div id="ThirdCollapse" class="collapse" aria-labelledby="ThirdCollapse" data-parent="#Egofaccordion">
+        <div id="ThirdCollapse" class="collapse" aria-labelledby="ThirdHeader" data-parent="#Egofaccordion">
             <div class="card-body">
-            This is the third group of text that should collapse.
+            This is the third group of text that should collapse. <strong>Press the upper button</strong>
             </div>
         </div>
     </div>
